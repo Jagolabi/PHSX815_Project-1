@@ -6,7 +6,7 @@ import numpy as np
 
 # import our Random class from python/Random.py file
 sys.path.append(".")
-import Random as rng
+import Random as ask
 
 # main function for our coin toss Python code
 if __name__ == "__main__":
@@ -20,31 +20,31 @@ if __name__ == "__main__":
     seed = 5555
 
     # default single dice roll probability for "1"
-    prob1 = 0.166667
+    prob1 = 0.111111
     
     # default single dice roll probability for "2"
-    prob2 = 0.166667    
+    prob2 = 0.111111    
     
     # default single dice roll probability for "3"
-    prob3 = 0.166667    
+    prob3 = 0.111111    
     
     # default single dice roll probability for "4"
-    prob4 = 0.166667
+    prob4 = 0.111111
     
     # default single dice roll probability for "5"
-    prob5 = 0.166667
+    prob5 = 0.111111
 
     # default single dice roll probability for "6"
-    prob6 = 0.166667 
+    prob6 = 0.111111 
     
     # default single dice roll probability for "7"
-    prob7 = 0.166667 
+    prob7 = 0.111111 
     
     # default single dice roll probability for "8"
-    prob8 = 0.166667 
+    prob8 = 0.111111 
     
     # default single dice roll probability for "9"
-    prob9 = 0.166667 
+    prob9 = 0.111111 
 
     # default number of dice rolls per experiment
     Ndice = 1
@@ -89,17 +89,17 @@ if __name__ == "__main__":
         ptemp6 = float(sys.argv[p6+1])
         if ptemp6 >= 0 and ptemp6 <= 1:
             prob6 = ptemp6 
-   if '-prob7' in sys.argv:
+    if '-prob7' in sys.argv:
         p7 = sys.argv.index('-prob7')
         ptemp7 = float(sys.argv[p7+1])
         if ptemp7 >= 0 and ptemp7 <= 1:
             prob7 = ptemp7
-   if '-prob8' in sys.argv:
+    if '-prob8' in sys.argv:
         p8 = sys.argv.index('-prob8')
         ptemp8 = float(sys.argv[p8+1])
         if ptemp8 >= 0 and ptemp8 <= 1:
             prob8 = ptemp8 
-  if '-prob9' in sys.argv:
+    if '-prob9' in sys.argv:
         p9 = sys.argv.index('-prob9')
         ptemp9 = float(sys.argv[p9+1])
         if ptemp9 >= 0 and ptemp9 <= 1:
@@ -120,7 +120,7 @@ if __name__ == "__main__":
         doOutputFile = True
 
     # class instance of our Random class using seed
-    random = rng.Random(seed)
+    random = ask.Random(seed)
 
     if doOutputFile:
         outfile = open(OutputFileName, 'w')
