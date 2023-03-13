@@ -32,14 +32,14 @@ if __name__ == "__main__":
 
     plt.figure()
     # creates histogram
-    n, bins, patches = plt.hist(flat, bins=range(8), alpha=0.7 ,rwidth=0.95, density = True, facecolor = "green")
+    n, bins, patches = plt.hist(flat, bins=range(20), alpha=0.7 ,rwidth=0.95, density = True, facecolor = "brown")
 
     # plot formating options
     plt.xlabel('face number of dice rolls')
     plt.ylabel('Probablity')
     plt.title(str(len(flat))+ ' dice rolls')
     plt.grid(axis='y', alpha=0.75)
-    plt.xlim(xmin=0.5, xmax = 7.5)
+    plt.xlim(xmin=0.5, xmax = 12)
     #plt.xticks(range(9))
     # show figure (program only ends once closed
     plt.show()
